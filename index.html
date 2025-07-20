@@ -1,0 +1,16 @@
+# Module-4-solu<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Menu Categories</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body ng-app="MenuApp" ng-controller="MenuCategoriesController as menu">
+
+  <h1>Menu Categories</h1>
+  <ul>
+    <li ng-repeat="category in menu.categories">
+      {{ category.name }} ({{ category.short_name }})
+    </li>
+  </ul>tion
